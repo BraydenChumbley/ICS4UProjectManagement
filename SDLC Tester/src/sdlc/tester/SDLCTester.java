@@ -7,7 +7,7 @@ package sdlc.tester;
 
 /**
  *
- * @author bchum
+ * @author Brayden Chumbley, Tony Yu, Joshua Hickey
  */
 public class SDLCTester {
 
