@@ -1,0 +1,27 @@
+{
+    "test" : [
+        {
+            "question" : "Title of question",
+            "type" : "MC",
+            "answer" : 3,
+            "options" : [
+                1, 2, 3, 4
+            ]
+        },
+        {
+            "question"  :"Title of question",
+            "type" : "TF",
+            "answer" : "T"
+        },
+        {
+            "question" : "Title of question",
+            "type" : "ALLAPPLY",
+            "answer" : [
+                2,4
+            ],
+            "options" : [
+                1, 2, 3, 4
+            ]
+        }
+    ]
+}
