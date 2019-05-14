@@ -3,6 +3,7 @@ package sdlc.tester;
 import java.io.File;
 import java.io.IOException;
 import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
 /**
@@ -42,6 +43,11 @@ public class QuestionReader extends AbstractJSONReader
     public void loadQuestions(String testName) throws IOException, ParseException, ClassCastException
     {
 	questions = (JSONArray) readFile().get(testName);
+    }
+    
+    public JSONObject getQuestion(int index)
+    {
+	return (JSONObject) questions.get(index);
     }
 
 }

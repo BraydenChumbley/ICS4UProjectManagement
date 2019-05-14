@@ -1,7 +1,7 @@
 {
     "test" : [
         {
-            "question" : "Title of question",
+            "question" : "Multiple Choice Question",
             "type" : "MC",
             "answer" : 3,
             "options" : [
@@ -9,19 +9,9 @@
             ]
         },
         {
-            "question"  :"Title of question",
+            "question"  :"True False Question",
             "type" : "TF",
             "answer" : "T"
-        },
-        {
-            "question" : "Title of question",
-            "type" : "ALLAPPLY",
-            "answer" : [
-                2,4
-            ],
-            "options" : [
-                1, 2, 3, 4
-            ]
         }
     ]
 }
