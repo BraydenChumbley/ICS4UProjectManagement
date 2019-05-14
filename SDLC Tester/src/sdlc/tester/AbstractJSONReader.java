@@ -14,7 +14,8 @@ import org.json.simple.parser.ParseException;
  *
  * @author Brayden Chumbley
  */
-public class AbstractJSONReader {
+public abstract class AbstractJSONReader 
+{
     
     protected JSONParser parser;
     protected FileReader jsonFileReader;
@@ -34,11 +35,6 @@ public class AbstractJSONReader {
 	{
 	    Logger.getLogger(AbstractJSONReader.class.getName()).log(Level.SEVERE, null, ex);
 	}
-    }
-    
-    public AbstractJSONReader(String jsonFilePath)
-    {
-	this(new File(jsonFilePath));
     }
     
     public JSONObject readFile() throws IOException, ParseException, ClassCastException
