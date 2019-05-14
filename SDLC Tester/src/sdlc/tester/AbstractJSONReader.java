@@ -14,7 +14,7 @@ import org.json.simple.parser.ParseException;
  *
  * @author Brayden Chumbley
  */
-public class AbstractJSONReader 
+public abstract class AbstractJSONReader 
 {
     
     protected JSONParser parser;
