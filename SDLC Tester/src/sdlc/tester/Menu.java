@@ -11,7 +11,6 @@ import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -60,7 +59,7 @@ public class Menu {
         choicePanel.setLayout(new GridLayout(3, 1));
         con.add(choicePanel);
 
-        //Learn button //btnLearn.setBorder(null);
+        //Learn button
         btnLearn = new JButton("Learn About It");
         btnLearn.setBackground(Color.black);
         btnLearn.setForeground(Color.white);
@@ -94,18 +93,9 @@ public class Menu {
             }
         });
         window.setVisible(true); //By making it ture it will display the window
-
-        if (btnScore.isSelected() == true) {
-            System.out.println("works");
-        }
     }
 
-    public void btnTestActionPerformed() {
-        if (btnTest.isSelected()) {
-            System.out.println("This works");
-        }
-    }
-
+    //When the user clicks the test button
     public void startTest(java.awt.event.ActionEvent evt) {
         titlePanel.setVisible(false);
         choicePanel.setVisible(false);
@@ -124,13 +114,14 @@ public class Menu {
         testQuestionPanel.add(questionTextArea);
     }
 
+    //When the user clicks the score button
     public void seeScore(java.awt.event.ActionEvent evt) {
         titlePanel.setVisible(false);
         choicePanel.setVisible(false);
-
         System.out.println("Nothing here");
     }
 
+    //When the user clicks the learn button
     public void learnMore(java.awt.event.ActionEvent evt) {
         titlePanel.setVisible(false);
         choicePanel.setVisible(false);
